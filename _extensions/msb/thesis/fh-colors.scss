@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+:root {
+  --fh-blue: #0014a0;
+  --fh-yellow: #ffd200;
+  --fh-orange: #ff821e;
+  --fh-red: #eb0041;
+  --fh-cyan: #00b4e6;
+  --fh-green: #00965a;
+  --fh-black: #1d1d1b;
+  --fh-grey: #868686;
+}
+
+a {
+  color: var(--fh-blue);
+}
+
+/*-- scss:rules --*/
+
+.quarto-title-banner {
+  background: var(--fh-blue);
+}

@@ -285,6 +285,10 @@ $else$
 \newcommand{\labelacknowledgements}{Danksagung}
 $endif$
 
+% FH color defaults
+\definecolor{fhblue}{HTML}{0014A0}
+\definecolor{fhgrey}{HTML}{868686}
+
 % Header/Footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -608,35 +612,58 @@ $else$
 $if(msb-thesis)$
 % MSB custom title page
 \begin{titlepage}
-  \centering
-  \vspace*{1cm}
-  
-  $if(logo)$
-  \IfFileExists{$logo$}{%
-    \includegraphics[height=2cm]{$logo$}
-    \vspace{1cm}
-  }{}
+  \thispagestyle{empty}
+  \setlength{\parindent}{0pt}
+
+  % Top pattern strip (full-bleed to page edges)
+  $if(title-pattern-file)$
+  \noindent
+  \hspace*{\dimexpr-1in-\hoffset-\oddsidemargin\relax}%
+  \includegraphics[width=\paperwidth,height=0.44\paperheight,trim=8 260 8 0,clip]{$title-pattern-file$}
+  $else$
+  \vspace*{2cm}
   $endif$
-  
-  {\Large\bfseries $if(title)$$title$$endif$\par}
-  \vspace{1cm}
-  {\large \labelthesis\par}
-  \vspace{2cm}
-  
+
+  \vspace{0.6cm}
+  \noindent
+  \begin{minipage}[t]{0.58\textwidth}
+    $if(fh-logo)$
+    \IfFileExists{$fh-logo$}{\includegraphics[height=1.0cm]{$fh-logo$}}{\textbf{FH Münster}}
+    $else$
+    \textbf{FH Münster}
+    $endif$
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.36\textwidth}
+    \raggedleft
+    $if(msb-logo)$
+    \IfFileExists{$msb-logo$}{\includegraphics[height=0.95cm]{$msb-logo$}}{\textbf{MSB}}
+    $else$
+    \textbf{MSB}
+    $endif$
+  \end{minipage}
+
+  \vspace{1.8cm}
+
+  {\LARGE\bfseries $if(title)$$title$$endif$\par}
+  \vspace{0.6cm}
+  {\large \textcolor{fhblue}{$if(subtitle)$$subtitle$$endif$}\par}
+  \vspace{1.4cm}
+
   {\large
   \begin{tabular}{ll}
     \textbf{\labelauthor:} & $if(author)$$author$$endif$ \\
     \textbf{\labelprogram:} & $if(program)$$program$$endif$ \\
     \textbf{\labelsupervisor:} & $if(supervisor)$$supervisor$$endif$ \\
-    $if(second-supervisor)$\textbf{\labelsecondsupervisor:} & $second-supervisor$ \\$endif$
+    $if(second-supervisor)$
+    \textbf{\labelsecondsupervisor:} & $second-supervisor$ \\
+    $endif$
     \textbf{\labeldate:} & $if(date)$$date$$endif$
   \end{tabular}
   \par}
-  
+
   \vfill
-  {\large FH Münster\par}
-  {\large Münster School of Business\par}
-  
+  {\large \labelthesis\par}
 \end{titlepage}
 $else$
 \maketitle

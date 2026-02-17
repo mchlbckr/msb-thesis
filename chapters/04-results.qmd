@@ -12,7 +12,7 @@ Die deskriptiven Ergebnisse zeigen, dass die Stichprobe repräsentativ ist (sieh
 
 Die Prozessvisualisierung in @fig-process zeigt den Ablauf der Datenerhebung.
 
-![Prozess der Datenerhebung](/figures/process-diagram.png){#fig-process width="80%"}
+![Prozess der Datenerhebung](../figures/process-diagram.png){#fig-process width="80%"}
 
 ## Hypothesentests
 

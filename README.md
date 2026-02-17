@@ -2,7 +2,7 @@
 
 Quarto-Template für Abschlussarbeiten an der Münster School of Business (MSB), FH Münster.
 
-**Status: Beta - Vollständig funktionsfähig**
+**Status: Release Candidate - produktiv nutzbar, Design-Feinschliff läuft**
 
 ## Features
 
@@ -293,7 +293,7 @@ acknowledgements: |
 
 ```yaml
 # Deutsch (Standard)
-lang: ngerman
+lang: de
 
 # Für Englisch:
 # lang: english
@@ -312,6 +312,23 @@ msb-logo: path/to/msb-logo.png
 # Titelseite (optional)
 logo: path/to/title-logo.png
 ```
+
+#### Titelseite mit FH-Pattern (Standard)
+
+Die Titelseite nutzt standardmäßig ein FH-Pattern als oberen Streifen. Die Pattern stammen aus `figures/pattern/` und werden intern als PDF-Varianten verwendet.
+
+```yaml
+# Standard (empfohlen)
+title-style: fh-pattern
+title-pattern: 1   # Werte: 1 bis 12
+
+# Alternative ohne Pattern
+# title-style: classic
+```
+
+**Hinweis:**
+- `title-pattern` kann von `1` bis `12` gewählt werden.
+- `title-style: fh-pattern` ist Default.
 
 ---
 
@@ -376,6 +393,23 @@ format:
 ### Header/Footer Layout
 
 ```
+
+### FH Corporate Colors
+
+In `_quarto.yml` sind die FH-Farben als Metadaten verfügbar:
+
+```yaml
+fh-blue: "#0014a0"
+fh-yellow: "#ffd200"
+fh-orange: "#ff821e"
+fh-red: "#eb0041"
+fh-cyan: "#00b4e6"
+fh-green: "#00965a"
+fh-black: "#1d1d1b"
+fh-grey: "#868686"
+```
+
+Für HTML werden diese Farben zusätzlich als CSS-Variablen bereitgestellt (`_extensions/msb/thesis/fh-colors.scss`).
 ┌─────────────────────────────────────┐
 │ Thesis-Titel        [FH-Logo]       │  Header
 │ Autor-Name                          │

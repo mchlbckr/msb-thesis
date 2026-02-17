@@ -1,8 +1,9 @@
 ---
 title: "Thesis Titel"
+subtitle: "Untertitel der Arbeit"
 author: "Vorname Nachname"
 date: today
-logo: _extensions/msb/thesis/assets/logo.png
+logo: figures/fhm_logo_aligned.png
 program: "Business Administration"
 supervisor: "Prof. Dr. Erstbetreuer Name"
 # second-supervisor: "Prof. Dr. Zweitbetreuer Name"  # Optional
