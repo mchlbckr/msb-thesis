@@ -1,0 +1,112 @@
+\documentclass[12pt, a4paper, twoside, openright]{report}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{biblatex}
+
+% Page geometry - MSB standard
+\geometry{
+  left=3cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm
+}
+
+% Line spacing
+\onehalfspacing
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Chapter format
+\titleformat{\chapter}[hang]
+  {\normalfont\Large\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+% Title page placeholders
+\newcommand{\msbtitle}{Thesis Title}
+\newcommand{\msbauthor}{Author Name}
+\newcommand{\msbdegree}{Master of Science}
+\newcommand{\msbprogram}{Business Administration}
+\newcommand{\msbsupervisor}{Prof. Dr. Supervisor}
+\newcommand{\msbdate}{\today}
+\newcommand{\msblogo}{}
+
+% Title page
+\newcommand{\msbtitlepage}{
+  \begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    $if(logo)$
+    \includegraphics[height=2cm]{$if(logo)$$logo$$endif$}
+    \vspace{1cm}
+    $endif$
+    
+    {\Large\bfseries $if(title)$$title$$endif$\par}
+    \vspace{1cm}
+    {\large Thesis\par}
+    \vspace{2cm}
+    
+    {\large
+    \begin{tabular}{ll}
+      \textbf{Author:} & $if(author)$$author$$endif$ \\
+      \textbf{Program:} & $if(program)$$program$$endif$ \\
+      \textbf{Supervisor:} & $if(supervisor)$$supervisor$$endif$ \\
+      \textbf{Date:} & $if(date)$$date$$endif$
+    \end{tabular}
+    \par}
+    
+    \vfill
+    {\large FH Münster\par}
+    {\large Münster School of Business\par}
+    
+  \end{titlepage}
+}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+
+\msbtitlepage
+
+$if(abstract)$
+\chapter*{Abstract}
+$abstract$
+$endif$
+
+$if(acknowledgements)$
+\chapter*{Acknowledgements}
+$acknowledgements$
+$endif$
+
+\tableofcontents
+$if(lof)$\listoffigures$endif$
+$if(lot)$\listoftables$endif$
+
+$body$
+
+$if(bibliography)$
+\printbibliography
+$endif$
+
+\end{document}

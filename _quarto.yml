@@ -1,0 +1,32 @@
+project:
+  type: book
+  output-dir: _output
+
+book:
+  title: "Thesis Title"
+  author: "Author Name"
+  date: today
+  chapters:
+    - index.qmd
+    - chapters/01-introduction.qmd
+    - chapters/02-literature.qmd
+    - chapters/03-methodology.qmd
+    - chapters/04-results.qmd
+    - chapters/05-discussion.qmd
+    - chapters/06-conclusion.qmd
+    - references.qmd
+
+format:
+  msb-thesis-pdf:
+    toc: true
+    lof: true
+    lot: true
+  html:
+    theme: cosmo
+
+bibliography: bib/references.bib
+
+# MSB-specific metadata
+logo: _extensions/msb/thesis/assets/logo.png
+program: "Business Administration"
+supervisor: "Prof. Dr. Supervisor Name"

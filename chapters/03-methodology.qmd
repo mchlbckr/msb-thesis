@@ -1,0 +1,24 @@
+---
+title: "Methodik"
+---
+
+# Methodik
+
+## Forschungsdesign
+
+Diese Studie verwendet ein quantitatives Forschungsdesign...
+
+## Datenerhebung
+
+Die Daten wurden erhoben durch...
+
+## Datenanalyse
+
+Zur Analyse wurden folgende Methoden angewendet:
+
+```{r}
+# Example R code
+library(tidyverse)
+data <- read_csv("data.csv")
+summary(data)
+```

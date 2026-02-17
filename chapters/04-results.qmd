@@ -1,0 +1,31 @@
+---
+title: "Ergebnisse"
+---
+
+# Ergebnisse
+
+## Deskriptive Statistik
+
+Die deskriptiven Ergebnisse zeigen...
+
+```{r}
+#| label: fig-results
+#| fig-cap: "Hauptergebnisse der Studie"
+#| echo: false
+
+library(ggplot2)
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  theme_minimal()
+```
+
+## Hypothesentests
+
+Die Ergebnisse der Hypothesentests sind in @tbl-results dargestellt.
+
+| Hypothese | p-Wert | Ergebnis |
+|-----------|--------|----------|
+| H1 | 0.001 | Bestätigt |
+| H2 | 0.123 | Abgelehnt |
+
+: Hypothesentestergebnisse {#tbl-results}

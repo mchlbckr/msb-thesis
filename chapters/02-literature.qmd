@@ -1,0 +1,17 @@
+---
+title: "Literaturübersicht"
+---
+
+# Literaturübersicht
+
+## Theoretischer Rahmen
+
+Dieser Abschnitt stellt den theoretischen Rahmen dar...
+
+## Stand der Forschung
+
+Der aktuelle Stand der Forschung zeigt... @smith2020 argumentiert, dass...
+
+## Forschungslücke
+
+Es besteht eine Forschungslücke in...

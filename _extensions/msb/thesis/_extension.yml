@@ -1,0 +1,22 @@
+name: msb-thesis
+title: MSB Thesis Template
+author: Michael
+version: 0.1.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    pdf:
+      template: template.tex
+      keep-tex: true
+      pdf-engine: pdflatex
+      toc: true
+      toc-depth: 3
+      lof: true
+      lot: true
+      bibliography: references.bib
+      csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+    html:
+      toc: true
+      toc-depth: 3
+      bibliography: references.bib
+      csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl

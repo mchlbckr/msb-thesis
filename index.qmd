@@ -1,0 +1,18 @@
+---
+title: "Thesis Titel"
+author: "Vorname Nachname"
+date: today
+logo: _extensions/msb/thesis/assets/logo.png
+program: "Business Administration"
+supervisor: "Prof. Dr. Betreuer Name"
+abstract: |
+  Diese Arbeit untersucht...
+  Die Ergebnisse zeigen...
+  Die Implikationen sind...
+acknowledgements: |
+  Ich möchte mich bei... bedanken.
+---
+
+# Vorwort
+
+Willkommen zu Ihrer MSB Thesis.

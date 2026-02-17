@@ -1,0 +1,17 @@
+.DS_Store
+_output/
+*.log
+*.aux
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+_cache/
+_files/
+_quarto/
