@@ -22,7 +22,7 @@ Zur Analyse wurden folgende Methoden angewendet:
 #| label: tbl-r-example
 #| tbl-cap: "Deskriptive Statistik der Stichprobe"
 
-library(tidyverse)
+library(tibble)
 
 data <- tibble(
   variable = c("Alter", "Einkommen", "Bildungsjahre"),
@@ -54,7 +54,7 @@ df <- tibble(
 
 ggplot(df, aes(x = income)) +
   geom_histogram(bins = 30, fill = "steelblue", color = "white") +
-  labs(x = "Einkommen (€)", y = "Häufigkeit") +
+  labs(x = "Einkommen (EUR)", y = "Häufigkeit") +
   theme_minimal()
 ```
 

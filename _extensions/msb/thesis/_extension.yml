@@ -1,7 +1,7 @@
 name: msb-thesis
 title: MSB Thesis Template
 author: Michael
-version: 0.3.0
+version: 1.0.0
 quarto-required: ">=1.4.0"
 contributes:
   filters:
