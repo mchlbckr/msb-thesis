@@ -8,16 +8,7 @@ title: "Ergebnisse"
 
 Die deskriptiven Ergebnisse zeigen...
 
-```{r}
-#| label: fig-results
-#| fig-cap: "Hauptergebnisse der Studie"
-#| echo: false
-
-library(ggplot2)
-ggplot(mtcars, aes(x = wt, y = mpg)) +
-  geom_point() +
-  theme_minimal()
-```
+Siehe Abbildung 1 für eine Visualisierung der Hauptergebnisse.
 
 ## Hypothesentests
 

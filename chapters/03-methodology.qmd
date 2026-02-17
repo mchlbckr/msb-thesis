@@ -16,9 +16,6 @@ Die Daten wurden erhoben durch...
 
 Zur Analyse wurden folgende Methoden angewendet:
 
-```{r}
-# Example R code
-library(tidyverse)
-data <- read_csv("data.csv")
-summary(data)
-```
+- Deskriptive Statistik
+- Regressionsanalyse
+- Hypothesentests

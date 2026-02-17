@@ -14,17 +14,28 @@ book:
     - chapters/04-results.qmd
     - chapters/05-discussion.qmd
     - chapters/06-conclusion.qmd
-    - references.qmd
+    # - references.qmd  # Uncomment after bibliography setup
 
 format:
-  msb-thesis-pdf:
+  pdf:
+    template: _extensions/msb/thesis/template.tex
+    keep-tex: true
     toc: true
     lof: true
     lot: true
+    citeproc: false
   html:
     theme: cosmo
+    citeproc: false
 
-bibliography: bib/references.bib
+# bibliography: bib/references.bib  # Uncomment after testing PDF generation
+
+# Language settings
+# For German (default):
+lang: ngerman
+# For English, uncomment:
+# lang: english
+# lang-english: true
 
 # MSB-specific metadata
 logo: _extensions/msb/thesis/assets/logo.png

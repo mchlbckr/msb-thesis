@@ -3,7 +3,12 @@
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+% Language support
+$if(lang)$
+\usepackage[$lang$]{babel}
+$else$
 \usepackage[ngerman]{babel}
+$endif$
 \usepackage{lmodern}
 \usepackage{geometry}
 \usepackage{setspace}
@@ -14,7 +19,11 @@
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{etoolbox}
-\usepackage{biblatex}
+\usepackage{longtable}
+
+% Fix for pandoc tightlist
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % Page geometry - MSB standard
 \geometry{
@@ -40,6 +49,25 @@
   {\normalfont\Large\bfseries}{\thechapter}{1em}{}
 \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
+% Language-specific labels
+$if(lang-english)$
+\newcommand{\labelauthor}{Author}
+\newcommand{\labelprogram}{Program}
+\newcommand{\labelsupervisor}{Supervisor}
+\newcommand{\labeldate}{Date}
+\newcommand{\labelthesis}{Thesis}
+\newcommand{\labelabstract}{Abstract}
+\newcommand{\labelacknowledgements}{Acknowledgements}
+$else$
+\newcommand{\labelauthor}{Autor}
+\newcommand{\labelprogram}{Studiengang}
+\newcommand{\labelsupervisor}{Betreuer}
+\newcommand{\labeldate}{Datum}
+\newcommand{\labelthesis}{Abschlussarbeit}
+\newcommand{\labelabstract}{Zusammenfassung}
+\newcommand{\labelacknowledgements}{Danksagung}
+$endif$
+
 % Title page placeholders
 \newcommand{\msbtitle}{Thesis Title}
 \newcommand{\msbauthor}{Author Name}
@@ -56,21 +84,23 @@
     \vspace*{1cm}
     
     $if(logo)$
-    \includegraphics[height=2cm]{$if(logo)$$logo$$endif$}
-    \vspace{1cm}
+    \IfFileExists{$logo$}{
+      \includegraphics[height=2cm]{$logo$}
+      \vspace{1cm}
+    }{}
     $endif$
     
     {\Large\bfseries $if(title)$$title$$endif$\par}
     \vspace{1cm}
-    {\large Thesis\par}
+    {\large \labelthesis\par}
     \vspace{2cm}
     
     {\large
     \begin{tabular}{ll}
-      \textbf{Author:} & $if(author)$$author$$endif$ \\
-      \textbf{Program:} & $if(program)$$program$$endif$ \\
-      \textbf{Supervisor:} & $if(supervisor)$$supervisor$$endif$ \\
-      \textbf{Date:} & $if(date)$$date$$endif$
+      \textbf{\labelauthor:} & $if(author)$$author$$endif$ \\
+      \textbf{\labelprogram:} & $if(program)$$program$$endif$ \\
+      \textbf{\labelsupervisor:} & $if(supervisor)$$supervisor$$endif$ \\
+      \textbf{\labeldate:} & $if(date)$$date$$endif$
     \end{tabular}
     \par}
     
@@ -90,12 +120,12 @@ $endfor$
 \msbtitlepage
 
 $if(abstract)$
-\chapter*{Abstract}
+\chapter*{\labelabstract}
 $abstract$
 $endif$
 
 $if(acknowledgements)$
-\chapter*{Acknowledgements}
+\chapter*{\labelacknowledgements}
 $acknowledgements$
 $endif$
 
@@ -106,7 +136,8 @@ $if(lot)$\listoftables$endif$
 $body$
 
 $if(bibliography)$
-\printbibliography
+\backmatter
+\chapter*{Bibliography}
 $endif$
 
 \end{document}

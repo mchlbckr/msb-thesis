@@ -15,3 +15,5 @@ _output/
 _cache/
 _files/
 _quarto/
+
+/.quarto/

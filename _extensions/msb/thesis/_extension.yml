@@ -5,7 +5,8 @@ version: 0.1.0
 quarto-required: ">=1.4.0"
 contributes:
   formats:
-    pdf:
+    msb-thesis-pdf:
+      base: pdf
       template: template.tex
       keep-tex: true
       pdf-engine: pdflatex
@@ -15,7 +16,8 @@ contributes:
       lot: true
       bibliography: references.bib
       csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
-    html:
+    msb-thesis-html:
+      base: html
       toc: true
       toc-depth: 3
       bibliography: references.bib

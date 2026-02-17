@@ -2,6 +2,16 @@
 
 Quarto-Template für Abschlussarbeiten an der Münster School of Business (MSB), FH Münster.
 
+**Status: Alpha - Grundfunktionen arbeiten, Bibliographie muss noch konfiguriert werden**
+
+## Features
+
+- Deutsch und Englisch unterstützt
+- PDF und HTML Output
+- MSB-Formatierung (12pt, 1,5-zeilig, A4)
+- 6 Beispiel-Kapitel
+- Vorlagen für Abstract, Danksagung, etc.
+
 ## Installation
 
 ```bash
@@ -20,12 +30,22 @@ quarto use template mchlbckr/msb-thesis
    - Studiengang (`program`)
    - Betreuer (`supervisor`)
 
-3. Logo ersetzen:
+3. Sprache wählen in `_quarto.yml`:
+   ```yaml
+   # Für Deutsch (Standard):
+   lang: ngerman
+   
+   # Für Englisch:
+   # lang: english
+   # lang-english: true
+   ```
+
+4. Logo ersetzen:
    - Datei in `_extensions/msb/thesis/assets/logo.png`
 
-4. Kapitel in `chapters/` bearbeiten
+5. Kapitel in `chapters/` bearbeiten
 
-5. Rendern:
+6. Rendern:
 ```bash
 quarto render
 ```
@@ -41,7 +61,7 @@ msb-thesis/
 │   ├── 02-literature.qmd
 │   └── ...
 ├── bib/
-│   └── references.bib    # Literatur
+│   └── references.bib    # Literatur (derzeit deaktiviert)
 └── _extensions/          # Template-Dateien
 ```
 
@@ -50,10 +70,22 @@ msb-thesis/
 Standardmäßig:
 - Schriftgröße: 12pt
 - Zeilenabstand: 1,5-zeilig
-- Seitenränder: links 3cm, rechts 2,5cm
+- Seitenränder: links 3cm, rechts 2,5cm, oben/unten 2,5cm
 - Papierformat: A4
 
 Anpassbar in `_extensions/msb/thesis/template.tex`.
+
+## Bekannte Einschränkungen
+
+- Bibliographie/Literaturverzeichnis muss noch konfiguriert werden
+- Logo ist optional (Template funktioniert ohne)
+
+## To Do
+
+- [ ] Bibliographie mit CSL-Unterstützung
+- [ ] MSB-Logo hinzufügen
+- [ ] Formatvorgaben der MSB einpflegen
+- [ ] Ausführlichere Beispiel-Kapitel
 
 ## Lizenz
 
