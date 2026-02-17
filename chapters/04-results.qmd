@@ -2,8 +2,6 @@
 title: "Ergebnisse"
 ---
 
-# Ergebnisse
-
 ## Deskriptive Statistik
 
 Die deskriptiven Ergebnisse zeigen, dass die Stichprobe repräsentativ ist (siehe @tbl-r-example).

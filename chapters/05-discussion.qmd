@@ -2,8 +2,6 @@
 title: "Diskussion"
 ---
 
-# Diskussion
-
 ## Interpretation der Ergebnisse
 
 Die Ergebnisse zeigen, dass...

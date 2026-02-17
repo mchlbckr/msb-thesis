@@ -2,8 +2,6 @@
 title: "Fazit"
 ---
 
-# Fazit
-
 ## Zusammenfassung
 
 Diese Arbeit hat gezeigt, dass...

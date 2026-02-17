@@ -2,8 +2,6 @@
 title: "Methodik"
 ---
 
-# Methodik
-
 ## Forschungsdesign
 
 Diese Studie verwendet ein quantitatives Forschungsdesign...

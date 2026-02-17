@@ -2,8 +2,6 @@
 title: "Literaturübersicht"
 ---
 
-# Literaturübersicht
-
 ## Theoretischer Rahmen
 
 Die digitale Transformation hat fundamentale Auswirkungen auf die Unternehmensführung [@smith2020; @chen2021]. Insbesondere @muller2019 betonen die Bedeutung von Datenanalyse für strategische Entscheidungen.

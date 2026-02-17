@@ -2,8 +2,6 @@
 title: "Einleitung"
 ---
 
-# Einleitung
-
 ## Hintergrund und Motivation
 
 Hier kommt der Hintergrund Ihrer Arbeit...

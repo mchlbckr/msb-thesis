@@ -14,6 +14,9 @@ _output/
 *.run.xml
 _cache/
 _files/
+**/*_files/
 _quarto/
+_freeze/
+Thesis-Title.tex
 
 /.quarto/
