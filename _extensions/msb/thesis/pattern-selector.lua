@@ -19,6 +19,13 @@ function Meta(meta)
     return meta
   end
 
+  local lang = meta["lang"] and stringify(meta["lang"]) or ""
+  if lang:match("^en") then
+    meta["lang-english"] = pandoc.MetaBool(true)
+  else
+    meta["lang-english"] = pandoc.MetaBool(false)
+  end
+
   if title_style(meta) == "classic" then
     return meta
   end
@@ -39,4 +46,23 @@ function Meta(meta)
   end
 
   return meta
+end
+
+function Header(el)
+  if el.level ~= 1 then
+    return el
+  end
+
+  local title = stringify(el):lower()
+  local is_refs =
+    el.identifier == "literaturverzeichnis" or
+    el.identifier == "references" or
+    title == "literaturverzeichnis" or
+    title == "references"
+
+  if is_refs then
+    el.classes:insert("unnumbered")
+  end
+
+  return el
 end

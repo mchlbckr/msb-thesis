@@ -20,3 +20,8 @@ a {
 .quarto-title-banner {
   background: var(--fh-blue);
 }
+
+/* Keep references unnumbered in HTML sidebar */
+a[href="./references.html"] .chapter-number {
+  display: none;
+}

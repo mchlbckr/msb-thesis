@@ -73,7 +73,7 @@ axes[0].hist(residuals, bins=20, edgecolor='white', color='steelblue')
 axes[0].set_title('Histogramm der Residuen')
 axes[0].set_xlabel('Residuen')
 
-stats.probplot(residuals, dist="norm", plot=axes[1])
+_ = stats.probplot(residuals, dist="norm", plot=axes[1])
 axes[1].set_title('Q-Q-Plot')
 
 plt.tight_layout()

@@ -1,9 +1,9 @@
 ---
-title: "Thesis Titel"
+title: "Einleitung"
 subtitle: "Untertitel der Arbeit"
+title-block: false
 author: "Vorname Nachname"
 date: today
-numbered: false
 logo: figures/fhm_logo_aligned.png
 program: "Business Administration"
 supervisor: "Prof. Dr. Erstbetreuer Name"
@@ -17,8 +17,25 @@ acknowledgements: |
 ---
 
 ::: {.content-visible when-format="html"}
-## Betreuung {-}
-
-- **Erstbetreuer:** {{< meta supervisor >}}
-- **Zweitbetreuer:** {{< meta second-supervisor >}}
+<p><strong>Erstbetreuer:</strong> {{< meta supervisor >}}</p>
 :::
+
+# Einleitung
+
+## Hintergrund und Motivation
+
+Hier kommt der Hintergrund Ihrer Arbeit...
+
+## Forschungsfrage
+
+Die zentrale Forschungsfrage lautet: ...
+
+## Aufbau der Arbeit
+
+Die Arbeit ist wie folgt aufgebaut:
+
+- Kapitel 2: Literaturübersicht
+- Kapitel 3: Methodik
+- Kapitel 4: Ergebnisse
+- Kapitel 5: Diskussion
+- Kapitel 6: Fazit

@@ -63,9 +63,6 @@ Die Verteilung der Einkommen ist in @fig-r-plot dargestellt.
 ### Python-Code (sichtbar)
 
 ```{python}
-#| label: tbl-python-example
-#| tbl-cap: "Korrelationsmatrix"
-
 import pandas as pd
 import numpy as np
 
@@ -80,7 +77,7 @@ corr = df.corr().round(2)
 print(corr)
 ```
 
-Die Korrelationen sind in @tbl-python-example zu sehen.
+Die Korrelationen werden im Code-Output ausgegeben.
 
 ### Python-Code (unsichtbar)
 

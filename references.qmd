@@ -1,7 +1,8 @@
 ---
-title: "Literaturverzeichnis"
-numbered: false
+title: ""
 ---
+
+# Literaturverzeichnis {.unnumbered}
 
 ::: {#refs}
 :::
