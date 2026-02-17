@@ -25,6 +25,20 @@ format:
 bibliography: bib/references.bib
 csl: csl/apa-de.csl
 
+# Logos
+fh-logo: figures/fhm_logo_aligned.png
+msb-logo: figures/msb_logo_aligned.png
+
+# FH Münster Corporate Colors
+fh-blue: "#0014a0"
+fh-yellow: "#ffd200"
+fh-orange: "#ff821e"
+fh-red: "#eb0041"
+fh-cyan: "#00b4e6"
+fh-green: "#00965a"
+fh-black: "#1d1d1b"
+fh-grey: "#868686"
+
 # Language settings
 # For German (default):
 lang: ngerman
