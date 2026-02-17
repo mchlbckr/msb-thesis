@@ -6,12 +6,18 @@ title: "Literaturübersicht"
 
 ## Theoretischer Rahmen
 
-Dieser Abschnitt stellt den theoretischen Rahmen dar...
+Die digitale Transformation hat fundamentale Auswirkungen auf die Unternehmensführung [@smith2020; @chen2021]. Insbesondere @muller2019 betonen die Bedeutung von Datenanalyse für strategische Entscheidungen.
+
+Nach @weber2018 ist die Anpassungsfähigkeit von Organisationen ein kritischer Erfolgsfaktor. Diese Erkenntnis wird durch aktuelle Studien bestätigt @schulz2022.
 
 ## Stand der Forschung
 
-Der aktuelle Stand der Forschung zeigt... Smith (2020) argumentiert, dass...
+Der aktuelle Stand der Forschung zeigt unterschiedliche Perspektiven:
+
+- @smith2020 identifizieren fünf Schlüsselfaktoren für digitale Transformation
+- @chen2021 untersuchen den Einfluss von Data Analytics auf Organisationsperformance
+- Die WHO stellt in ihrem Bericht globale Trends dar @who2023
 
 ## Forschungslücke
 
-Es besteht eine Forschungslücke in...
+Trotz umfangreicher Forschung @muller2019; @weber2018 besteht eine Forschungslücke hinsichtlich der spezifischen Anwendungen im deutschen Mittelstand.

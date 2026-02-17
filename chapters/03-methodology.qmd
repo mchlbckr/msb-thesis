@@ -8,6 +8,8 @@ title: "Methodik"
 
 Diese Studie verwendet ein quantitatives Forschungsdesign...
 
+Inline-Code: Der p-Wert beträgt `r 0.001` und ist somit signifikant.
+
 ## Datenerhebung
 
 Die Daten wurden erhoben durch...
@@ -16,6 +18,88 @@ Die Daten wurden erhoben durch...
 
 Zur Analyse wurden folgende Methoden angewendet:
 
-- Deskriptive Statistik
-- Regressionsanalyse
-- Hypothesentests
+### R-Code (sichtbar)
+
+```{r}
+#| label: tbl-r-example
+#| tbl-cap: "Deskriptive Statistik der Stichprobe"
+
+library(tidyverse)
+
+data <- tibble(
+  variable = c("Alter", "Einkommen", "Bildungsjahre"),
+  mean = c(35.2, 45600, 14.3),
+  sd = c(8.4, 12500, 2.1),
+  n = c(250, 250, 250)
+)
+
+knitr::kable(data, 
+             caption = "Deskriptive Statistik",
+             digits = 1)
+```
+
+Siehe @tbl-r-example für die deskriptiven Statistiken.
+
+### R-Code (unsichtbar, nur Output)
+
+```{r}
+#| label: fig-r-plot
+#| fig-cap: "Verteilung der Einkommen"
+#| echo: false
+#| warning: false
+
+library(ggplot2)
+set.seed(42)
+df <- tibble(
+  income = rnorm(200, mean = 45000, sd = 12000)
+)
+
+ggplot(df, aes(x = income)) +
+  geom_histogram(bins = 30, fill = "steelblue", color = "white") +
+  labs(x = "Einkommen (€)", y = "Häufigkeit") +
+  theme_minimal()
+```
+
+Die Verteilung der Einkommen ist in @fig-r-plot dargestellt.
+
+### Python-Code (sichtbar)
+
+```{python}
+#| label: tbl-python-example
+#| tbl-cap: "Korrelationsmatrix"
+
+import pandas as pd
+import numpy as np
+
+np.random.seed(42)
+df = pd.DataFrame({
+    'Alter': np.random.normal(35, 8, 100),
+    'Einkommen': np.random.normal(45000, 12000, 100),
+    'Bildung': np.random.normal(14, 2, 100)
+})
+
+corr = df.corr().round(2)
+print(corr)
+```
+
+Die Korrelationen sind in @tbl-python-example zu sehen.
+
+### Python-Code (unsichtbar)
+
+```{python}
+#| label: fig-python-plot
+#| fig-cap: "Scatterplot: Alter vs. Einkommen"
+#| echo: false
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 5))
+plt.scatter(df['Alter'], df['Einkommen'], alpha=0.5, color='steelblue')
+plt.xlabel('Alter')
+plt.ylabel('Einkommen (€)')
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+```
+
+@fig-python-plot zeigt den Zusammenhang zwischen Alter und Einkommen.

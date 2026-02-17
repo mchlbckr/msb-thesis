@@ -14,21 +14,16 @@ book:
     - chapters/04-results.qmd
     - chapters/05-discussion.qmd
     - chapters/06-conclusion.qmd
-    # - references.qmd  # Uncomment after bibliography setup
+    - references.qmd
 
 format:
   pdf:
-    template: _extensions/msb/thesis/template.tex
-    keep-tex: true
-    toc: true
-    lof: true
-    lot: true
-    citeproc: false
+    msb-thesis: true
   html:
     theme: cosmo
-    citeproc: false
 
-# bibliography: bib/references.bib  # Uncomment after testing PDF generation
+bibliography: bib/references.bib
+csl: csl/apa-de.csl
 
 # Language settings
 # For German (default):
@@ -38,6 +33,16 @@ lang: ngerman
 # lang-english: true
 
 # MSB-specific metadata
-logo: _extensions/msb/thesis/assets/logo.png
+# Logos for header/footer
+# fh-logo: path/to/fh-logo.png    # Top right header
+# msb-logo: path/to/msb-logo.png  # Bottom right footer
+
+# Layout:
+# - Header left: Title + Author
+# - Header right: FH Logo
+# - Footer left: Page number
+# - Footer right: MSB Logo
+
+logo: _extensions/msb/thesis/assets/logo.png  # Title page logo (optional)
 program: "Business Administration"
 supervisor: "Prof. Dr. Supervisor Name"
