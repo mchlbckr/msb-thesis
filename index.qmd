@@ -3,6 +3,7 @@ title: "Thesis Titel"
 subtitle: "Untertitel der Arbeit"
 author: "Vorname Nachname"
 date: today
+numbered: false
 logo: figures/fhm_logo_aligned.png
 program: "Business Administration"
 supervisor: "Prof. Dr. Erstbetreuer Name"
@@ -15,6 +16,9 @@ acknowledgements: |
   Ich möchte mich bei... bedanken.
 ---
 
-# Vorwort
+::: {.content-visible when-format="html"}
+## Betreuung {-}
 
-Willkommen zu Ihrer MSB Thesis.
+- **Erstbetreuer:** {{< meta supervisor >}}
+- **Zweitbetreuer:** {{< meta second-supervisor >}}
+:::

@@ -270,7 +270,7 @@ $if(lang-english)$
 \newcommand{\labelprogram}{Program}
 \newcommand{\labelsupervisor}{First Supervisor}
 \newcommand{\labelsecondsupervisor}{Second Supervisor}
-\newcommand{\labeldate}{Date}
+\newcommand{\labeldate}{Submission Date}
 \newcommand{\labelthesis}{Thesis}
 \newcommand{\labelabstract}{Abstract}
 \newcommand{\labelacknowledgements}{Acknowledgements}
@@ -279,7 +279,7 @@ $else$
 \newcommand{\labelprogram}{Studiengang}
 \newcommand{\labelsupervisor}{Erstbetreuer}
 \newcommand{\labelsecondsupervisor}{Zweitbetreuer}
-\newcommand{\labeldate}{Datum}
+\newcommand{\labeldate}{Abgabedatum}
 \newcommand{\labelthesis}{Abschlussarbeit}
 \newcommand{\labelabstract}{Zusammenfassung}
 \newcommand{\labelacknowledgements}{Danksagung}
@@ -323,6 +323,12 @@ $if(lhs)$
 $endif$
 $if(highlighting-macros)$
 $highlighting-macros$
+% Reduce code block font size for PDF readability
+\makeatletter
+\@ifundefined{Highlighting}{}{%
+  \RecustomVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small}
+}
+\makeatother
 $endif$
 $if(tables)$
 \usepackage{longtable,booktabs,array}
@@ -612,14 +618,15 @@ $if(msb-thesis)$
 
   % Top pattern strip (full-bleed to page edges)
   $if(title-pattern-file)$
+  \vspace*{\dimexpr-1in-\voffset-\topmargin\relax}
   \noindent
   \hspace*{\dimexpr-1in-\hoffset-\oddsidemargin\relax}%
-  \includegraphics[width=\paperwidth,height=0.44\paperheight,trim=8 260 8 0,clip]{$title-pattern-file$}
+  \includegraphics[width=\paperwidth,trim=80 500 80 60,clip]{$title-pattern-file$}
   $else$
   \vspace*{2cm}
   $endif$
 
-  \vspace{0.6cm}
+  \vspace{0.15cm}
   \noindent
   \begin{minipage}[t]{0.58\textwidth}
     $if(fh-logo)$
@@ -638,14 +645,14 @@ $if(msb-thesis)$
     $endif$
   \end{minipage}
 
-  \vspace{1.8cm}
+  \vspace{1.0cm}
 
   {\LARGE\bfseries $if(title)$$title$$endif$\par}
-  \vspace{0.6cm}
+  \vspace{0.45cm}
   {\large \textcolor{fhblue}{$if(subtitle)$$subtitle$$endif$}\par}
-  \vspace{1.4cm}
+  \vspace{0.85cm}
 
-  {\large
+  {\normalsize
   \begin{tabular}{ll}
     \textbf{\labelauthor:} & $if(author)$$author$$endif$ \\
     \textbf{\labelprogram:} & $if(program)$$program$$endif$ \\
@@ -658,7 +665,7 @@ $if(msb-thesis)$
   \par}
 
   \vfill
-  {\large \labelthesis\par}
+  {\normalsize $if(thesis-label)$$thesis-label$$else$\labelthesis$endif$\par}
 \end{titlepage}
 $else$
 \maketitle

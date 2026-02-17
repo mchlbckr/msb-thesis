@@ -33,7 +33,7 @@ format:
       - left=2.5cm
       - right=2.5cm
     linestretch: 1.5
-    fontsize: 12pt
+    fontsize: 11pt
     papersize: a4
     msb-thesis: true
     # Pragmatic sans-serif default (Arial-compatible)
@@ -43,6 +43,8 @@ format:
   html:
     pandoc-args:
       - --lua-filter=_extensions/msb/thesis/pattern-selector.lua
+    include-after-body:
+      - _extensions/msb/thesis/fix-sidebar-link.html
     theme:
       - cosmo
       - _extensions/msb/thesis/fh-colors.scss
@@ -50,12 +52,17 @@ format:
     toc-depth: 3
     citeproc: true
 
+execute:
+  warning: false
+  message: false
+
 bibliography: bib/references.bib
 csl: csl/apa-de.csl
 
 # Title page style
 title-style: fh-pattern
-title-pattern: 1
+title-pattern: 10
+title-pattern-file: figures/pattern/pdf/Pattern_A4_CMYK_Blau_10.pdf
 
 # Logos
 fh-logo: figures/fhm_logo_aligned.png
@@ -81,4 +88,6 @@ lang: de
 logo: figures/fhm_logo_aligned.png
 program: "Business Administration"
 supervisor: "Prof. Dr. Erstbetreuer Name"
-# second-supervisor: "Prof. Dr. Zweitbetreuer Name"  # Optional
+second-supervisor: "" # Optional
+# second-supervisor: "Prof. Dr. Zweitbetreuer Name"
+thesis-label: "Masterarbeit" # e.g. Masterarbeit or Bachelorarbeit

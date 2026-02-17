@@ -25,7 +25,7 @@ function Meta(meta)
 
   if not meta["title-pattern-file"] then
     local selected = meta["title-pattern"]
-    local n = 1
+    local n = 10
     if selected then
       local parsed = tonumber(stringify(selected))
       if parsed and parsed >= 1 and parsed <= 12 then
