@@ -278,13 +278,16 @@ title: "Ihre Thesis-Titel"
 author: "Ihr Name"
 date: today
 program: "Business Administration"
-supervisor: "Prof. Dr. Betreuer Name"
+supervisor: "Prof. Dr. Erstbetreuer Name"
+# second-supervisor: "Prof. Dr. Zweitbetreuer Name"  # Optional
 abstract: |
   Deutsche Zusammenfassung Ihrer Arbeit...
 acknowledgements: |
   Danksagung...
 ---
 ```
+
+**Hinweis:** `second-supervisor` ist optional. Einfach auskommentieren wenn nicht benötigt.
 
 #### Sprache wählen (`_quarto.yml`)
 
@@ -346,11 +349,29 @@ msb-thesis/
 
 | Einstellung | Wert |
 |-------------|------|
+| Schriftart | Liberation Sans (Arial-kompatibel) |
 | Schriftgröße | 12pt |
 | Zeilenabstand | 1,5-zeilig |
-| Seitenränder | links 3cm, rechts 2,5cm, oben/unten 2,5cm |
+| Seitenränder | 2,5cm (alle Seiten, digitaler Output) |
 | Papierformat | A4 |
 | Zitierstil | APA (citeproc) |
+
+### Schriftart ändern
+
+Das Template verwendet **Liberation Sans** (Open-Source, Arial-kompatibel).
+
+**Auf Arial ändern** (falls auf Ihrem System installiert - Windows/macOS):
+
+In `_quarto.yml`:
+```yaml
+format:
+  pdf:
+    mainfont: "Arial"
+    sansfont: "Arial"
+    monofont: "Courier New"
+```
+
+**Hinweis:** Liberation Sans ist zu 100% Arial-kompatibel und funktioniert auf allen Betriebssystemen.
 
 ### Header/Footer Layout
 
