@@ -4,7 +4,8 @@ author: "Vorname Nachname"
 date: today
 logo: _extensions/msb/thesis/assets/logo.png
 program: "Business Administration"
-supervisor: "Prof. Dr. Betreuer Name"
+supervisor: "Prof. Dr. Erstbetreuer Name"
+# second-supervisor: "Prof. Dr. Zweitbetreuer Name"  # Optional
 abstract: |
   Diese Arbeit untersucht...
   Die Ergebnisse zeigen...

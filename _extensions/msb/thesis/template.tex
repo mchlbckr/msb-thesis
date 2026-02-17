@@ -268,7 +268,8 @@ $if(msb-thesis)$
 $if(lang-english)$
 \newcommand{\labelauthor}{Author}
 \newcommand{\labelprogram}{Program}
-\newcommand{\labelsupervisor}{Supervisor}
+\newcommand{\labelsupervisor}{First Supervisor}
+\newcommand{\labelsecondsupervisor}{Second Supervisor}
 \newcommand{\labeldate}{Date}
 \newcommand{\labelthesis}{Thesis}
 \newcommand{\labelabstract}{Abstract}
@@ -276,7 +277,8 @@ $if(lang-english)$
 $else$
 \newcommand{\labelauthor}{Autor}
 \newcommand{\labelprogram}{Studiengang}
-\newcommand{\labelsupervisor}{Betreuer}
+\newcommand{\labelsupervisor}{Erstbetreuer}
+\newcommand{\labelsecondsupervisor}{Zweitbetreuer}
 \newcommand{\labeldate}{Datum}
 \newcommand{\labelthesis}{Abschlussarbeit}
 \newcommand{\labelabstract}{Zusammenfassung}
@@ -626,6 +628,7 @@ $if(msb-thesis)$
     \textbf{\labelauthor:} & $if(author)$$author$$endif$ \\
     \textbf{\labelprogram:} & $if(program)$$program$$endif$ \\
     \textbf{\labelsupervisor:} & $if(supervisor)$$supervisor$$endif$ \\
+    $if(second-supervisor)$\textbf{\labelsecondsupervisor:} & $second-supervisor$ \\$endif$
     \textbf{\labeldate:} & $if(date)$$date$$endif$
   \end{tabular}
   \par}
