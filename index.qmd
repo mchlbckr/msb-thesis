@@ -20,8 +20,6 @@ acknowledgements: |
 <p><strong>Erstbetreuer:</strong> {{< meta supervisor >}}</p>
 :::
 
-# Einleitung
-
 ## Hintergrund und Motivation
 
 Hier kommt der Hintergrund Ihrer Arbeit...
