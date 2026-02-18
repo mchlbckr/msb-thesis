@@ -8,7 +8,6 @@ book:
   date: today
   chapters:
     - index.qmd
-    - chapters/01-introduction.qmd
     - chapters/02-literature.qmd
     - chapters/03-methodology.qmd
     - chapters/04-results.qmd
@@ -33,7 +32,7 @@ format:
       - bottom=2.5cm
       - left=2.5cm
       - right=2.5cm
-    linestretch: 1.5
+    linestretch: 1.0
     fontsize: 12pt
     papersize: a4
     msb-thesis: true
