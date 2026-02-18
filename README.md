@@ -322,7 +322,7 @@ All layout parameters are centralised in `_quarto.yml`:
 |---------|-----|---------|
 | Margins | `geometry` | `top=2.5cm` |
 | Line spacing | `linestretch` | `1.5` |
-| Font size | `fontsize` | `12pt` |
+| Font size | `fontsize` | `11pt` |
 | Main font (PDF) | `mainfont` | `Liberation Sans` |
 | FH brand colours | `fh-blue`, `fh-yellow`, … | `#0014a0` |
 

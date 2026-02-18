@@ -21,7 +21,7 @@ contributes:
         - left=2.5cm
         - right=2.5cm
       linestretch: 1.0
-      fontsize: 12pt
+      fontsize: 11pt
       papersize: a4
     html:
       toc: true
