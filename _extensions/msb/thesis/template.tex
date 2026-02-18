@@ -551,6 +551,8 @@ $if(msb-thesis)$
   \vfill
   {\normalsize $if(thesis-label)$$thesis-label$$else$\labelthesis$endif$\par}
 \end{titlepage}
+% Title page is unnumbered; switch to roman for front matter (abstract, TOC, LOF, LOT).
+\pagenumbering{roman}
 $else$
 \maketitle
 $endif$
@@ -599,6 +601,12 @@ $if(linestretch)$
 $endif$
 $if(has-frontmatter)$
 \mainmatter
+$else$
+$if(msb-thesis)$
+% Switch from roman (front matter) to arabic page numbering for the main text.
+\clearpage
+\pagenumbering{arabic}
+$endif$
 $endif$
 $body$
 

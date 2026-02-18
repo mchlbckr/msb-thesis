@@ -8,13 +8,15 @@ book:
   date: today
   chapters:
     - index.qmd
+    - chapters/01-introduction.qmd
     - chapters/02-literature.qmd
     - chapters/03-methodology.qmd
     - chapters/04-results.qmd
     - chapters/05-discussion.qmd
     - chapters/06-conclusion.qmd
-    - chapters/07-appendix.qmd
     - references.qmd
+  appendices:
+    - chapters/07-appendix.qmd
 
 format:
   pdf:

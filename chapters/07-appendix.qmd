@@ -2,10 +2,6 @@
 title: "Anhang"
 ---
 
-::: {.content-visible when-format="pdf"}
-\appendix
-:::
-
 ## Anhang A: Zusätzliche Tabellen {#sec-appendix-a}
 
 @tbl-appendix-full zeigt die vollständigen deskriptiven Statistiken aller erhobenen Variablen.
