@@ -17,6 +17,7 @@ book:
     - references.qmd
   appendices:
     - chapters/07-appendix.qmd
+    - chapters/08-interview-guide.qmd
 
 format:
   pdf:
