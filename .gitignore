@@ -16,7 +16,6 @@ _cache/
 _files/
 **/*_files/
 _quarto/
-_freeze/
 Thesis-Title.tex
 
 /.quarto/

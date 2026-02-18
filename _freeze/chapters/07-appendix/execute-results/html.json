@@ -1,0 +1,17 @@
+{
+  "hash": "481d509e344ec40ff8ce0807953f1a60",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Tabellen und Abbildungen\"\n---\n\n## Zusätzliche Tabellen {#sec-appendix-a}\n\n@tbl-appendix-full zeigt die vollständigen deskriptiven Statistiken aller erhobenen Variablen.\n\n\n::: {#tbl-appendix-full .cell tbl-cap='Vollständige deskriptive Statistiken'}\n::: {.cell-output-display}\n\n\n|Variable        |   Min|    Max| Mittelwert|      SD|   n|\n|:---------------|-----:|------:|----------:|-------:|---:|\n|Alter           |    18|     65|       35.2|     8.4| 250|\n|Einkommen       | 12000| 120000|    45600.0| 12500.0| 250|\n|Bildungsjahre   |     8|     22|       14.3|     2.1| 250|\n|Berufserfahrung |     0|     40|       11.8|     9.3| 250|\n\n\n:::\n:::\n\n\n## Zusätzliche Abbildungen {#sec-appendix-b}\n\nHier können weitere Abbildungen eingefügt werden, die den Haupttext entlasten.\n\n## Erhebungsmaterialien {#sec-appendix-c}\n\nHier können Fragebögen, Interviewleitfäden oder andere Erhebungsmaterialien abgedruckt werden.\n",
+    "supporting": [
+      "07-appendix_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

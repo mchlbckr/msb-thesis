@@ -1,0 +1,17 @@
+{
+  "hash": "15c0416e2d162bebc2ad901fe2ab1bf0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Ergebnisse\"\n---\n\n## Deskriptive Statistik\n\nDie deskriptiven Ergebnisse zeigen, dass die Stichprobe repräsentativ ist (siehe @tbl-r-example).\n\n## Externe Abbildung\n\nDie Prozessvisualisierung in @fig-process zeigt den Ablauf der Datenerhebung.\n\n![Prozess der Datenerhebung](../figures/process-diagram.png){#fig-process width=\"80%\"}\n\n## Hypothesentests\n\nDie Ergebnisse der Hypothesentests sind in @tbl-hypothesen dargestellt.\n\n| Hypothese | p-Wert | Effektstärke | Ergebnis |\n|-----------|--------|--------------|----------|\n| H1: Alter → Einkommen | 0.001 | 0.45 | Bestätigt |\n| H2: Bildung → Einkommen | 0.023 | 0.32 | Bestätigt |\n| H3: Geschlecht → Einkommen | 0.187 | 0.08 | Abgelehnt |\n\n: Ergebnisse der Hypothesentests {#tbl-hypothesen}\n\n@tbl-hypothesen zeigt, dass H1 und H2 bestätigt werden können (p < .05), während H3 abgelehnt werden muss.\n\n## Regressionsanalyse\n\n### R-Code mit Tabelle\n\n\n::: {#tbl-regression .cell tbl-cap='Regressionsanalyse: Prädiktoren des Einkommens'}\n\n```{.r .cell-code}\nlibrary(broom)\n\n# Simulierte Regression\nset.seed(42)\nn <- 200\nage <- rnorm(n, 35, 8)\neducation <- rnorm(n, 14, 2)\nincome <- 20000 + 800 * age + 1500 * education + rnorm(n, 0, 8000)\n\nmodel <- lm(income ~ age + education)\ntidy_model <- broom::tidy(model)\n\nknitr::kable(tidy_model, \n             digits = 3,\n             col.names = c(\"Prädiktor\", \"b\", \"SE\", \"t\", \"p\"))\n```\n\n::: {.cell-output-display}\n\n\n|Prädiktor   |         b|       SE|     t|     p|\n|:-----------|---------:|--------:|-----:|-----:|\n|(Intercept) | 17573.942| 5339.863| 3.291| 0.001|\n|age         |   748.141|   76.098| 9.831| 0.000|\n|education   |  1768.699|  313.233| 5.647| 0.000|\n\n\n:::\n:::\n\n\nDie Regressionsergebnisse in @tbl-regression bestätigen die Hypothesen.\n\n### Python-Code mit Abbildung\n\n\n::: {.cell}\n\n```{.python .cell-code}\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nnp.random.seed(42)\nresiduals = np.random.normal(0, 1, 100)\n\nfig, axes = plt.subplots(1, 2, figsize=(10, 4))\n\naxes[0].hist(residuals, bins=20, edgecolor='white', color='steelblue')\naxes[0].set_title('Histogramm der Residuen')\naxes[0].set_xlabel('Residuen')\n\n_ = stats.probplot(residuals, dist=\"norm\", plot=axes[1])\naxes[1].set_title('Q-Q-Plot')\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\nText(0.5, 1.0, 'Q-Q-Plot')\n```\n\n\n:::\n\n```{.python .cell-code}\nplt.tight_layout()\nplt.show()\n```\n\n::: {.cell-output-display}\n![Residuenanalyse der Regression](04-results_files/figure-html/fig-residuals-1.png){#fig-residuals width=960}\n:::\n:::\n\n\nDie Residuenanalyse in @fig-residuals zeigt keine Verletzungen der Annahmen.\n",
+    "supporting": [
+      "04-results_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

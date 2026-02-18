@@ -1,0 +1,21 @@
+{
+  "hash": "e8507160631d9278c308a8e255d60afb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Methodik\"\n---\n\n## Forschungsdesign\n\nDiese Studie verwendet ein quantitatives Forschungsdesign...\n\nInline-Code: Der p-Wert beträgt 0.001 und ist somit signifikant.\n\n## Datenerhebung\n\nDie Daten wurden erhoben durch...\n\n## Datenanalyse\n\nZur Analyse wurden folgende Methoden angewendet:\n\n### R-Code (sichtbar)\n\n\n::: {#tbl-r-example .cell tbl-cap='Deskriptive Statistik der Stichprobe'}\n\n```{.r .cell-code}\nlibrary(tibble)\n\ndata <- tibble(\n  variable = c(\"Alter\", \"Einkommen\", \"Bildungsjahre\"),\n  mean = c(35.2, 45600, 14.3),\n  sd = c(8.4, 12500, 2.1),\n  n = c(250, 250, 250)\n)\n\nknitr::kable(data, \n             caption = \"Deskriptive Statistik\",\n             digits = 1)\n```\n\n::: {.cell-output-display}\n\n\nTable: Deskriptive Statistik\n\n|variable      |    mean|      sd|   n|\n|:-------------|-------:|-------:|---:|\n|Alter         |    35.2|     8.4| 250|\n|Einkommen     | 45600.0| 12500.0| 250|\n|Bildungsjahre |    14.3|     2.1| 250|\n\n\n:::\n:::\n\n\nSiehe @tbl-r-example für die deskriptiven Statistiken.\n\n### R-Code (unsichtbar, nur Output)\n\n\n::: {.cell}\n::: {.cell-output-display}\n![Verteilung der Einkommen](03-methodology_files/figure-pdf/fig-r-plot-1.pdf){#fig-r-plot}\n:::\n:::\n\n\nDie Verteilung der Einkommen ist in @fig-r-plot dargestellt.\n\n### Python-Code (sichtbar)\n\n\n::: {.cell}\n\n```{.python .cell-code}\nimport pandas as pd\nimport numpy as np\n\nnp.random.seed(42)\ndf = pd.DataFrame({\n    'Alter': np.random.normal(35, 8, 100),\n    'Einkommen': np.random.normal(45000, 12000, 100),\n    'Bildung': np.random.normal(14, 2, 100)\n})\n\ncorr = df.corr().round(2)\nprint(corr)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n           Alter  Einkommen  Bildung\nAlter       1.00      -0.14     0.19\nEinkommen  -0.14       1.00    -0.04\nBildung     0.19      -0.04     1.00\n```\n\n\n:::\n:::\n\n\nDie Korrelationen werden im Code-Output ausgegeben.\n\n### Python-Code (unsichtbar)\n\n\n::: {.cell}\n::: {.cell-output-display}\n![Scatterplot: Alter vs. Einkommen](03-methodology_files/figure-pdf/fig-python-plot-1.pdf){#fig-python-plot}\n:::\n:::\n\n\n@fig-python-plot zeigt den Zusammenhang zwischen Alter und Einkommen.\n\n## Statistische Modellierung\n\nDie Regressionsanalyse basiert auf folgendem Modell:\n\n$$\nY_i = \\beta_0 + \\beta_1 X_{1i} + \\beta_2 X_{2i} + \\varepsilon_i, \\quad \\varepsilon_i \\sim \\mathcal{N}(0, \\sigma^2)\n$$ {#eq-regression}\n\n@eq-regression beschreibt das lineare Regressionsmodell, wobei $Y_i$ das Einkommen, $X_{1i}$ das Alter und $X_{2i}$ die Bildungsjahre der Person $i$ darstellen.\n",
+    "supporting": [
+      "03-methodology_files/figure-pdf"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}
