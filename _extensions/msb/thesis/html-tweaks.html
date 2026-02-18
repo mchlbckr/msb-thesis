@@ -1,9 +1,18 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  // Remove chapter number from the references sidebar link
   document.querySelectorAll(
     'a[href$="references.html"] .chapter-number, a[href="#references"] .chapter-number'
   ).forEach(function (el) {
     el.remove();
   });
+
+  // Hide the redundant cover-page heading on index.html — the title block
+  // already shows the title prominently above it
+  var path = window.location.pathname;
+  if (path === "/" || path.endsWith("/index.html")) {
+    var h1 = document.querySelector("h1.unnumbered");
+    if (h1) h1.style.display = "none";
+  }
 });
 </script>

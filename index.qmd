@@ -15,7 +15,7 @@ acknowledgements: |
   Ich möchte mich bei... bedanken.
 ---
 
-# Deckblatt {.unnumbered .unlisted}
+# Thesis Title {.unnumbered .unlisted}
 
 ::: {.content-visible when-format="html"}
 <p><strong>Erstbetreuer:</strong> {{< meta supervisor >}}</p>
