@@ -1,8 +1,8 @@
 ---
-title: "Anhang"
+title: "Tabellen und Abbildungen"
 ---
 
-## Anhang A: Zusätzliche Tabellen {#sec-appendix-a}
+## Zusätzliche Tabellen {#sec-appendix-a}
 
 @tbl-appendix-full zeigt die vollständigen deskriptiven Statistiken aller erhobenen Variablen.
 
@@ -25,10 +25,10 @@ data <- tibble(
 knitr::kable(data, digits = 1)
 ```
 
-## Anhang B: Zusätzliche Abbildungen {#sec-appendix-b}
+## Zusätzliche Abbildungen {#sec-appendix-b}
 
 Hier können weitere Abbildungen eingefügt werden, die den Haupttext entlasten.
 
-## Anhang C: Materialien {#sec-appendix-c}
+## Erhebungsmaterialien {#sec-appendix-c}
 
 Hier können Fragebögen, Interviewleitfäden oder andere Erhebungsmaterialien abgedruckt werden.
