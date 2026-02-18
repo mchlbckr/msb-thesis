@@ -36,7 +36,7 @@ format:
       - left=2.5cm
       - right=2.5cm
     linestretch: 1.0
-    fontsize: 12pt
+    fontsize: 11pt
     papersize: a4
     msb-thesis: true
     # Pragmatic sans-serif default (Arial-compatible)
