@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Thesis Title",
+    "section": "",
+    "text": "1 Einleitung\nErstbetreuer: Prof. Dr. Erstbetreuer Name",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#hintergrund-und-motivation",
+    "href": "index.html#hintergrund-und-motivation",
+    "title": "Thesis Title",
+    "section": "1.1 Hintergrund und Motivation",
+    "text": "1.1 Hintergrund und Motivation\nHier kommt der Hintergrund Ihrer Arbeit…",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#forschungsfrage",
+    "href": "index.html#forschungsfrage",
+    "title": "Thesis Title",
+    "section": "1.2 Forschungsfrage",
+    "text": "1.2 Forschungsfrage\nDie zentrale Forschungsfrage lautet: …",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#aufbau-der-arbeit",
+    "href": "index.html#aufbau-der-arbeit",
+    "title": "Thesis Title",
+    "section": "1.3 Aufbau der Arbeit",
+    "text": "1.3 Aufbau der Arbeit\nDie Arbeit ist wie folgt aufgebaut:\n\nKapitel 2: Literaturübersicht\nKapitel 3: Methodik\nKapitel 4: Ergebnisse\nKapitel 5: Diskussion\nKapitel 6: Fazit",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-literature.html",
+    "href": "chapters/02-literature.html",
+    "title": "2  Literaturübersicht",
+    "section": "",
+    "text": "2.1 Theoretischer Rahmen\nDie digitale Transformation hat fundamentale Auswirkungen auf die Unternehmensführung (Chen & Zhang, 2021; Smith & Johnson, 2020). Insbesondere Müller & Schmidt (2019) betonen die Bedeutung von Datenanalyse für strategische Entscheidungen.\nNach Weber (2018) ist die Anpassungsfähigkeit von Organisationen ein kritischer Erfolgsfaktor. Diese Erkenntnis wird durch aktuelle Studien bestätigt Schulz (2022).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Literaturübersicht</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-literature.html#stand-der-forschung",
+    "href": "chapters/02-literature.html#stand-der-forschung",
+    "title": "2  Literaturübersicht",
+    "section": "2.2 Stand der Forschung",
+    "text": "2.2 Stand der Forschung\nDer aktuelle Stand der Forschung zeigt unterschiedliche Perspektiven:\n\nSmith & Johnson (2020) identifizieren fünf Schlüsselfaktoren für digitale Transformation\nChen & Zhang (2021) untersuchen den Einfluss von Data Analytics auf Organisationsperformance\nDie WHO stellt in ihrem Bericht globale Trends dar World Health Organization (2023)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Literaturübersicht</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-literature.html#forschungslücke",
+    "href": "chapters/02-literature.html#forschungslücke",
+    "title": "2  Literaturübersicht",
+    "section": "2.3 Forschungslücke",
+    "text": "2.3 Forschungslücke\nTrotz umfangreicher Forschung Müller & Schmidt (2019); Weber (2018) besteht eine Forschungslücke hinsichtlich der spezifischen Anwendungen im deutschen Mittelstand.\n\n\n\n\nChen, W., & Zhang, L. (2021). Data Analytics in Modern Organizations. Harvard Business Review, 99(3), 78–89.\n\n\nMüller, H., & Schmidt, P. (2019). Einführung in die Betriebswirtschaftslehre (5. Aufl.). Springer Gabler.\n\n\nSchulz, A. (2022). Innovation und Wettbewerbsfähigkeit: Eine empirische Analyse [Dissertation]. Universität Münster.\n\n\nSmith, J., & Johnson, M. (2020). The Impact of Digital Transformation on Business Performance. Journal of Business Research, 110, 456–470. https://doi.org/10.1016/j.jbusres.2019.10.012\n\n\nWeber, T. (2018). Strategisches Management im digitalen Zeitalter. In S. Braun & C. Hoffmann (Hrsg.), Handbuch Unternehmensführung (S. 234–256). Vandenhoeck & Ruprecht.\n\n\nWorld Health Organization. (2023). Global Health Statistics 2023. https://www.who.int/data",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Literaturübersicht</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-methodology.html",
+    "href": "chapters/03-methodology.html",
+    "title": "3  Methodik",
+    "section": "",
+    "text": "3.1 Forschungsdesign\nDiese Studie verwendet ein quantitatives Forschungsdesign…\nInline-Code: Der p-Wert beträgt 0.001 und ist somit signifikant.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodik</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-methodology.html#datenerhebung",
+    "href": "chapters/03-methodology.html#datenerhebung",
+    "title": "3  Methodik",
+    "section": "3.2 Datenerhebung",
+    "text": "3.2 Datenerhebung\nDie Daten wurden erhoben durch…",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodik</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-methodology.html#datenanalyse",
+    "href": "chapters/03-methodology.html#datenanalyse",
+    "title": "3  Methodik",
+    "section": "3.3 Datenanalyse",
+    "text": "3.3 Datenanalyse\nZur Analyse wurden folgende Methoden angewendet:\n\n3.3.1 R-Code (sichtbar)\n\nlibrary(tidyverse)\n\ndata &lt;- tibble(\n  variable = c(\"Alter\", \"Einkommen\", \"Bildungsjahre\"),\n  mean = c(35.2, 45600, 14.3),\n  sd = c(8.4, 12500, 2.1),\n  n = c(250, 250, 250)\n)\n\nknitr::kable(data, \n             caption = \"Deskriptive Statistik\",\n             digits = 1)\n\n\n\nTabelle 3.1: Deskriptive Statistik der Stichprobe\n\n\n\n\nDeskriptive Statistik\n\n\nvariable\nmean\nsd\nn\n\n\n\n\nAlter\n35.2\n8.4\n250\n\n\nEinkommen\n45600.0\n12500.0\n250\n\n\nBildungsjahre\n14.3\n2.1\n250\n\n\n\n\n\n\n\n\nSiehe Tabelle 3.1 für die deskriptiven Statistiken.\n\n\n3.3.2 R-Code (unsichtbar, nur Output)\n\n\n\n\n\n\n\n\nAbbildung 3.1: Verteilung der Einkommen\n\n\n\n\n\nDie Verteilung der Einkommen ist in Abbildung 3.1 dargestellt.\n\n\n3.3.3 Python-Code (sichtbar)\n\nimport pandas as pd\nimport numpy as np\n\nnp.random.seed(42)\ndf = pd.DataFrame({\n    'Alter': np.random.normal(35, 8, 100),\n    'Einkommen': np.random.normal(45000, 12000, 100),\n    'Bildung': np.random.normal(14, 2, 100)\n})\n\ncorr = df.corr().round(2)\nprint(corr)\n\n           Alter  Einkommen  Bildung\nAlter       1.00      -0.14     0.19\nEinkommen  -0.14       1.00    -0.04\nBildung     0.19      -0.04     1.00\n\n\nDie Korrelationen werden im Code-Output ausgegeben.\n\n\n3.3.4 Python-Code (unsichtbar)\n\n\n\n\n\n\n\n\nAbbildung 3.2: Scatterplot: Alter vs. Einkommen\n\n\n\n\n\nAbbildung 3.2 zeigt den Zusammenhang zwischen Alter und Einkommen.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodik</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-results.html",
+    "href": "chapters/04-results.html",
+    "title": "4  Ergebnisse",
+    "section": "",
+    "text": "4.1 Deskriptive Statistik\nDie deskriptiven Ergebnisse zeigen, dass die Stichprobe repräsentativ ist (siehe Tabelle 3.1).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ergebnisse</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-results.html#externe-abbildung",
+    "href": "chapters/04-results.html#externe-abbildung",
+    "title": "4  Ergebnisse",
+    "section": "4.2 Externe Abbildung",
+    "text": "4.2 Externe Abbildung\nDie Prozessvisualisierung in Abbildung 4.1 zeigt den Ablauf der Datenerhebung.\n\n\n\n\n\n\nAbbildung 4.1: Prozess der Datenerhebung",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ergebnisse</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-results.html#hypothesentests",
+    "href": "chapters/04-results.html#hypothesentests",
+    "title": "4  Ergebnisse",
+    "section": "4.3 Hypothesentests",
+    "text": "4.3 Hypothesentests\nDie Ergebnisse der Hypothesentests sind in Tabelle 4.1 dargestellt.\n\n\n\nTabelle 4.1: Ergebnisse der Hypothesentests\n\n\n\n\n\nHypothese\np-Wert\nEffektstärke\nErgebnis\n\n\n\n\nH1: Alter → Einkommen\n0.001\n0.45\nBestätigt\n\n\nH2: Bildung → Einkommen\n0.023\n0.32\nBestätigt\n\n\nH3: Geschlecht → Einkommen\n0.187\n0.08\nAbgelehnt\n\n\n\n\n\n\nTabelle 4.1 zeigt, dass H1 und H2 bestätigt werden können (p &lt; .05), während H3 abgelehnt werden muss.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ergebnisse</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-results.html#regressionsanalyse",
+    "href": "chapters/04-results.html#regressionsanalyse",
+    "title": "4  Ergebnisse",
+    "section": "4.4 Regressionsanalyse",
+    "text": "4.4 Regressionsanalyse\n\n4.4.1 R-Code mit Tabelle\n\nlibrary(broom)\n\n# Simulierte Regression\nset.seed(42)\nn &lt;- 200\nage &lt;- rnorm(n, 35, 8)\neducation &lt;- rnorm(n, 14, 2)\nincome &lt;- 20000 + 800 * age + 1500 * education + rnorm(n, 0, 8000)\n\nmodel &lt;- lm(income ~ age + education)\ntidy_model &lt;- broom::tidy(model)\n\nknitr::kable(tidy_model, \n             digits = 3,\n             col.names = c(\"Prädiktor\", \"b\", \"SE\", \"t\", \"p\"))\n\n\n\nTabelle 4.2: Regressionsanalyse: Prädiktoren des Einkommens\n\n\n\n\n\n\nPrädiktor\nb\nSE\nt\np\n\n\n\n\n(Intercept)\n17573.942\n5339.863\n3.291\n0.001\n\n\nage\n748.141\n76.098\n9.831\n0.000\n\n\neducation\n1768.699\n313.233\n5.647\n0.000\n\n\n\n\n\n\n\n\nDie Regressionsergebnisse in Tabelle 4.2 bestätigen die Hypothesen.\n\n\n4.4.2 Python-Code mit Abbildung\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nnp.random.seed(42)\nresiduals = np.random.normal(0, 1, 100)\n\nfig, axes = plt.subplots(1, 2, figsize=(10, 4))\n\naxes[0].hist(residuals, bins=20, edgecolor='white', color='steelblue')\naxes[0].set_title('Histogramm der Residuen')\naxes[0].set_xlabel('Residuen')\n\n_ = stats.probplot(residuals, dist=\"norm\", plot=axes[1])\naxes[1].set_title('Q-Q-Plot')\n\nText(0.5, 1.0, 'Q-Q-Plot')\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\nAbbildung 4.2: Residuenanalyse der Regression\n\n\n\n\n\nDie Residuenanalyse in Abbildung 4.2 zeigt keine Verletzungen der Annahmen.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ergebnisse</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-discussion.html",
+    "href": "chapters/05-discussion.html",
+    "title": "5  Diskussion",
+    "section": "",
+    "text": "5.1 Interpretation der Ergebnisse\nDie Ergebnisse zeigen, dass…",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diskussion</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-discussion.html#theoretische-implikationen",
+    "href": "chapters/05-discussion.html#theoretische-implikationen",
+    "title": "5  Diskussion",
+    "section": "5.2 Theoretische Implikationen",
+    "text": "5.2 Theoretische Implikationen\nAus theoretischer Sicht…",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diskussion</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-discussion.html#praktische-implikationen",
+    "href": "chapters/05-discussion.html#praktische-implikationen",
+    "title": "5  Diskussion",
+    "section": "5.3 Praktische Implikationen",
+    "text": "5.3 Praktische Implikationen\nFür die Praxis bedeutet dies…",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diskussion</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-discussion.html#limitationen",
+    "href": "chapters/05-discussion.html#limitationen",
+    "title": "5  Diskussion",
+    "section": "5.4 Limitationen",
+    "text": "5.4 Limitationen\nDiese Studie unterliegt folgenden Limitationen…",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diskussion</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-conclusion.html",
+    "href": "chapters/06-conclusion.html",
+    "title": "6  Fazit",
+    "section": "",
+    "text": "6.1 Zusammenfassung\nDiese Arbeit hat gezeigt, dass…",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Fazit</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-conclusion.html#ausblick",
+    "href": "chapters/06-conclusion.html#ausblick",
+    "title": "6  Fazit",
+    "section": "6.2 Ausblick",
+    "text": "6.2 Ausblick\nZukünftige Forschung sollte…",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Fazit</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "7  Literaturverzeichnis",
+    "section": "",
+    "text": "Chen, W., & Zhang, L. (2021). Data analytics in modern\norganizations. Harvard Business Review, 99(3), 78–89.\n\n\nMüller, H., & Schmidt, P. (2019). Einführung in die\nbetriebswirtschaftslehre (5th ed.). Springer Gabler.\n\n\nSchulz, A. (2022). Innovation und wettbewerbsfähigkeit: Eine\nempirische analyse [Dissertation]. Universität Münster.\n\n\nSmith, J., & Johnson, M. (2020). The impact of digital\ntransformation on business performance. Journal of Business\nResearch, 110, 456–470. https://doi.org/10.1016/j.jbusres.2019.10.012\n\n\nWeber, T. (2018). Strategisches management im digitalen zeitalter. In S.\nBraun & C. Hoffmann (Eds.), Handbuch unternehmensführung\n(pp. 234–256). Vandenhoeck & Ruprecht.\n\n\nWorld Health Organization. (2023). Global health statistics\n2023. https://www.who.int/data",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Literaturverzeichnis</span>"
+    ]
+  }
+]
