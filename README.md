@@ -2,6 +2,10 @@
 
 Quarto template for theses at Münster School of Business (MSB), FH Münster.
 
+[![Release](https://img.shields.io/github/v/release/mchlbckr/msb-thesis)](https://github.com/mchlbckr/msb-thesis/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Quarto >=1.4.0](https://img.shields.io/badge/Quarto-%3E%3D1.4.0-39729E)](https://quarto.org/)
+
 **Release:** `v1.0.0` (stable) 🚀
 
 This template is designed for students who want a working thesis setup with as little technical setup pain as possible.
@@ -295,4 +299,3 @@ MIT
 ## Support 🆘
 
 - Issues: https://github.com/mchlbckr/msb-thesis/issues
-
