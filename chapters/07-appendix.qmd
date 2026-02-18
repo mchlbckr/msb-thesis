@@ -1,0 +1,38 @@
+---
+title: "Anhang"
+---
+
+::: {.content-visible when-format="pdf"}
+\appendix
+:::
+
+## Anhang A: Zusätzliche Tabellen {#sec-appendix-a}
+
+@tbl-appendix-full zeigt die vollständigen deskriptiven Statistiken aller erhobenen Variablen.
+
+```{r}
+#| label: tbl-appendix-full
+#| tbl-cap: "Vollständige deskriptive Statistiken"
+#| echo: false
+
+library(tibble)
+
+data <- tibble(
+  Variable      = c("Alter", "Einkommen", "Bildungsjahre", "Berufserfahrung"),
+  Min           = c(18, 12000, 8, 0),
+  Max           = c(65, 120000, 22, 40),
+  Mittelwert    = c(35.2, 45600, 14.3, 11.8),
+  SD            = c(8.4, 12500, 2.1, 9.3),
+  n             = c(250, 250, 250, 250)
+)
+
+knitr::kable(data, digits = 1)
+```
+
+## Anhang B: Zusätzliche Abbildungen {#sec-appendix-b}
+
+Hier können weitere Abbildungen eingefügt werden, die den Haupttext entlasten.
+
+## Anhang C: Materialien {#sec-appendix-c}
+
+Hier können Fragebögen, Interviewleitfäden oder andere Erhebungsmaterialien abgedruckt werden.

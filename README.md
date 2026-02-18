@@ -284,6 +284,62 @@ Fix:
 - Build and configuration guidance aligned with repository layout
 - Troubleshooting rewritten with explicit symptom-to-fix steps
 
+## Extending the Template
+
+This section is for developers who want to customise or extend the template beyond the options available in `_quarto.yml`.
+
+### Adding new title-page patterns
+
+1. Place the new PDF pattern file in `figures/pattern/pdf/` using the naming convention `Pattern_A4_CMYK_Blau_<NN>.pdf` (zero-padded, e.g. `13`).
+2. Update `MAX_PATTERNS` at the top of `_extensions/msb/thesis/pattern-selector.lua` to match the new total count.
+3. Set `title-pattern: <NN>` in `_quarto.yml` or `index.qmd` to use the new pattern.
+
+### Modifying the Lua filter
+
+`_extensions/msb/thesis/pattern-selector.lua` runs as a Pandoc filter during every render. It:
+
+- Resolves `title-pattern: <N>` to a concrete file path (`title-pattern-file`).
+- Converts the IETF `lang` code to the boolean `lang-english` flag used in the LaTeX template.
+- Marks the references chapter header as unnumbered.
+
+The filter has access to the full Pandoc Lua API. See the [Pandoc Lua filters documentation](https://pandoc.org/lua-filters.html) for reference.
+
+### Adding language support
+
+Currently supported languages: `de` (German) and `en` (English).
+
+To add a new language:
+
+1. Add the language code to the `SUPPORTED_LANGS` table in `pattern-selector.lua` (line 2).
+2. Add a new `$if(lang-<code>)$` branch in `_extensions/msb/thesis/template.tex` inside the `$if(msb-thesis)$` block to define localised label commands (`\labelauthor`, `\labelprogram`, etc.).
+3. Add the corresponding APA CSL file to `csl/` and update `csl:` in `_quarto.yml`.
+
+### Modifying colours, fonts, and margins
+
+All layout parameters are centralised in `_quarto.yml`:
+
+| Setting | Key | Example |
+|---------|-----|---------|
+| Margins | `geometry` | `top=2.5cm` |
+| Line spacing | `linestretch` | `1.5` |
+| Font size | `fontsize` | `12pt` |
+| Main font (PDF) | `mainfont` | `Liberation Sans` |
+| FH brand colours | `fh-blue`, `fh-yellow`, … | `#0014a0` |
+
+HTML colours are defined as CSS variables in `_extensions/msb/thesis/fh-colors.scss`.
+
+### Architecture overview
+
+```
+_quarto.yml               ← project config (chapters, metadata, format options)
+_extensions/msb/thesis/
+  _extension.yml          ← extension metadata and format defaults
+  pattern-selector.lua    ← Pandoc Lua filter (runs at render time)
+  template.tex            ← Pandoc LaTeX template (PDF output)
+  fh-colors.scss          ← SCSS variables for HTML output
+  html-tweaks.html        ← JavaScript injected into HTML output
+```
+
 ## Contributing 🤝
 
 Contributions are welcome.

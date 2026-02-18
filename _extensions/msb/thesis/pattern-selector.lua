@@ -1,3 +1,6 @@
+local MAX_PATTERNS = 12
+local SUPPORTED_LANGS = { de = true, en = true }
+
 local function stringify(meta_value)
   return pandoc.utils.stringify(meta_value)
 end
@@ -19,12 +22,13 @@ function Meta(meta)
     return meta
   end
 
-  local lang = meta["lang"] and stringify(meta["lang"]) or ""
-  if lang:match("^en") then
-    meta["lang-english"] = pandoc.MetaBool(true)
-  else
-    meta["lang-english"] = pandoc.MetaBool(false)
+  -- Detect language; warn for unsupported codes and fall back to German
+  local lang = meta["lang"] and stringify(meta["lang"]) or "de"
+  local lang_prefix = lang:match("^(%a%a)") or "de"
+  if not SUPPORTED_LANGS[lang_prefix] then
+    io.stderr:write("msb-thesis: unsupported language '" .. lang .. "', defaulting to German\n")
   end
+  meta["lang-english"] = pandoc.MetaBool(lang_prefix == "en")
 
   if title_style(meta) == "classic" then
     return meta
@@ -35,14 +39,20 @@ function Meta(meta)
     local n = 10
     if selected then
       local parsed = tonumber(stringify(selected))
-      if parsed and parsed >= 1 and parsed <= 12 then
+      if parsed and parsed >= 1 and parsed <= MAX_PATTERNS then
         n = math.floor(parsed)
       end
     end
     local index = string.format("%02d", n)
-    meta["title-pattern-file"] = pandoc.MetaString(
-      "figures/pattern/pdf/Pattern_A4_CMYK_Blau_" .. index .. ".pdf"
-    )
+    local pattern_path = "figures/pattern/pdf/Pattern_A4_CMYK_Blau_" .. index .. ".pdf"
+    -- Warn if the pattern file is missing so the build doesn't fail silently
+    local f = io.open(pattern_path, "r")
+    if f then
+      f:close()
+    else
+      io.stderr:write("msb-thesis: pattern file not found: " .. pattern_path .. "\n")
+    end
+    meta["title-pattern-file"] = pandoc.MetaString(pattern_path)
   end
 
   return meta

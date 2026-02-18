@@ -10,12 +10,10 @@ contributes:
     pdf:
       template: template.tex
       msb-thesis: true
-      keep-tex: true
       toc: true
       toc-depth: 3
       lof: true
       lot: true
-      bibliography: references.bib
       citeproc: true
       geometry:
         - top=2.5cm
@@ -28,7 +26,6 @@ contributes:
     html:
       toc: true
       toc-depth: 3
-      bibliography: references.bib
       citeproc: true
       theme:
         - cosmo

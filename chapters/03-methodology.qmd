@@ -98,3 +98,13 @@ plt.show()
 ```
 
 @fig-python-plot zeigt den Zusammenhang zwischen Alter und Einkommen.
+
+## Statistische Modellierung
+
+Die Regressionsanalyse basiert auf folgendem Modell:
+
+$$
+Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \varepsilon_i, \quad \varepsilon_i \sim \mathcal{N}(0, \sigma^2)
+$$ {#eq-regression}
+
+@eq-regression beschreibt das lineare Regressionsmodell, wobei $Y_i$ das Einkommen, $X_{1i}$ das Alter und $X_{2i}$ die Bildungsjahre der Person $i$ darstellen.

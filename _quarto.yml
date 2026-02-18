@@ -8,11 +8,13 @@ book:
   date: today
   chapters:
     - index.qmd
+    - chapters/01-introduction.qmd
     - chapters/02-literature.qmd
     - chapters/03-methodology.qmd
     - chapters/04-results.qmd
     - chapters/05-discussion.qmd
     - chapters/06-conclusion.qmd
+    - chapters/07-appendix.qmd
     - references.qmd
 
 format:
@@ -31,8 +33,8 @@ format:
       - bottom=2.5cm
       - left=2.5cm
       - right=2.5cm
-    linestretch: 1.0
-    fontsize: 11pt
+    linestretch: 1.5
+    fontsize: 12pt
     papersize: a4
     msb-thesis: true
     # Pragmatic sans-serif default (Arial-compatible)
@@ -54,6 +56,7 @@ format:
 execute:
   warning: false
   message: false
+  freeze: auto
 
 bibliography: bib/references.bib
 csl: csl/apa-de.csl

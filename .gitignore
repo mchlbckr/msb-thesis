@@ -20,3 +20,20 @@ _freeze/
 Thesis-Title.tex
 
 /.quarto/
+
+# Generated output directories (use `make html` / `make pdf` to build)
+_output-html/
+_output-pdf/
+site_libs/
+
+# Quarto intermediate files
+figure/
+03-methodology.md
+
+# R artifacts
+Rplots.pdf
+
+# Temporary build/test files
+tmp-*.png
+
+**/*.quarto_ipynb

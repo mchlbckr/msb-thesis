@@ -1,6 +1,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('a[href$="references.html"] .chapter-number').forEach(function (el) {
+  document.querySelectorAll(
+    'a[href$="references.html"] .chapter-number, a[href="#references"] .chapter-number'
+  ).forEach(function (el) {
     el.remove();
   });
 });
