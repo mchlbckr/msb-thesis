@@ -207,19 +207,33 @@ $endif$
 % Left header: thesis title + author. Right header: FH Münster logo (fh-logo).
 % Left footer: page number.  Right footer: MSB logo (msb-logo).
 % Logo paths are set via `fh-logo` and `msb-logo` metadata in _quarto.yml.
+%
+% Logo sizing: both logo files are 886 x 151 px and their text starts at x = 238 px,
+% but the lettering in the MSB logo is ~25 % larger (cap height 34.5 vs 27.5 px).
+% The MSB logo is therefore scaled to 0.797 of the FH logo height so that both texts
+% have the same size, and it is shifted so that its text starts exactly below the
+% FH text (box as wide as the FH logo: 886/151 = 5.8675; text start 238/151 = 1.5762).
+\newlength{\fhlogoh}\setlength{\fhlogoh}{1cm}
+\newlength{\msblogoh}\setlength{\msblogoh}{0.797\fhlogoh}
+% The FH text ends at x = 797 px; the 88 px of white space after it (88/151 = 0.5828 logo
+% heights) are pushed out so that the text ends exactly at the header/footer rule.
+\newcommand{\logoflushright}{\hspace*{-0.5828\fhlogoh}}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small $if(title)$$title$$endif$ \\ $if(author)$$author$$endif$}
 \fancyhead[R]{%
   $if(fh-logo)$
-  \IfFileExists{$fh-logo$}{\includegraphics[height=1cm]{$fh-logo$}}{}
+  \IfFileExists{$fh-logo$}{\includegraphics[height=\fhlogoh]{$fh-logo$}\logoflushright}{}
   $endif$
 }
 \fancyfoot[L]{\thepage}
 \fancyfoot[R]{%
   $if(msb-logo)$
-  \IfFileExists{$msb-logo$}{\includegraphics[height=1cm]{$msb-logo$}}{}
+  \IfFileExists{$msb-logo$}{%
+    \makebox[5.8675\fhlogoh][l]{%
+      \hspace{\dimexpr 1.5762\fhlogoh - 1.5762\msblogoh\relax}%
+      \includegraphics[height=\msblogoh]{$msb-logo$}}\logoflushright}{}
   $endif$
 }
 \renewcommand{\headrulewidth}{0.4pt}
@@ -514,7 +528,7 @@ $if(msb-thesis)$
   \noindent
   \begin{minipage}[t]{0.58\textwidth}
     $if(fh-logo)$
-    \IfFileExists{$fh-logo$}{\includegraphics[height=1.0cm]{$fh-logo$}}{\textbf{FH Münster}}
+    \IfFileExists{$fh-logo$}{\includegraphics[height=\fhlogoh]{$fh-logo$}}{\textbf{FH Münster}}
     $else$
     \textbf{FH Münster}
     $endif$
@@ -523,7 +537,8 @@ $if(msb-thesis)$
   \begin{minipage}[t]{0.36\textwidth}
     \raggedleft
     $if(msb-logo)$
-    \IfFileExists{$msb-logo$}{\includegraphics[height=0.95cm]{$msb-logo$}}{\textbf{MSB}}
+    % same text size as the FH logo; baselines of the second text line aligned
+    \IfFileExists{$msb-logo$}{\raisebox{0.1267\fhlogoh}{\includegraphics[height=\msblogoh]{$msb-logo$}}}{\textbf{MSB}}
     $else$
     \textbf{MSB}
     $endif$
