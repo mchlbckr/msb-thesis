@@ -24,6 +24,7 @@ This template is designed for students who want a working thesis setup with as l
 - PDF and HTML output
 - German and English language support
 - APA citation styles (`csl/apa-de.csl`, `csl/apa.csl`)
+- Optional abbreviation list in the PDF front matter
 - Example bibliography, references, figures, and code chunks
 
 ## Fastest Path (5 Minutes) ⚡
@@ -165,6 +166,7 @@ Set your thesis metadata here:
 Main project configuration:
 
 - chapter order
+- whether an abbreviation list is used (`abbreviations-in-frontmatter`)
 - language (`lang: de` or `lang: en`)
 - bibliography (`bib/references.bib`)
 - citation style (`csl/apa-de.csl` or `csl/apa.csl`)
@@ -195,6 +197,18 @@ Multiple sources: [@smith2020; @miller2019]
 - Table labels: `#tbl-...`, reference with `@tbl-...`
 - Equation labels: `#eq-...`, reference with `@eq-...`
 
+### Abbreviation List 🔤
+
+The example list is in `chapters/00-abbreviations.qmd`. Add, edit, or remove
+rows in its Markdown table as needed. It appears after the table of contents,
+list of figures, and list of tables. With
+`abbreviations-in-frontmatter: true` in `_quarto.yml`, it receives Roman page
+numbers and the first main chapter starts on Arabic page 1.
+
+If no abbreviation list is required, remove
+`chapters/00-abbreviations.qmd` from `book.chapters` and set
+`abbreviations-in-frontmatter: false` (or remove that setting).
+
 ### Figure formats 🖼️
 
 Recommended:
@@ -211,6 +225,7 @@ msb-thesis/
 ├── _quarto.yml
 ├── index.qmd
 ├── chapters/
+│   ├── 00-abbreviations.qmd
 │   ├── 02-literature.qmd
 │   ├── 03-methodology.qmd
 │   ├── 04-results.qmd

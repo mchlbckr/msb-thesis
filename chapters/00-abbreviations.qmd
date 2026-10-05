@@ -1,0 +1,15 @@
+# Abkürzungsverzeichnis {.unnumbered}
+
+Ergänzen oder löschen Sie die Beispiele nach Bedarf. Die Tabelle wird sowohl
+im PDF als auch in der HTML-Version ausgegeben.
+
+| Abkürzung | Bedeutung |
+|---|---|
+| API | Application Programming Interface |
+| BWL | Betriebswirtschaftslehre |
+| KI | Künstliche Intelligenz |
+
+```{=latex}
+\clearpage
+\pagenumbering{arabic}
+```

@@ -8,6 +8,7 @@ book:
   date: today
   chapters:
     - index.qmd
+    - chapters/00-abbreviations.qmd
     - chapters/01-introduction.qmd
     - chapters/02-literature.qmd
     - chapters/03-methodology.qmd
@@ -39,6 +40,9 @@ format:
     fontsize: 11pt
     papersize: a4
     msb-thesis: true
+    # Keep the abbreviation list in the PDF front matter (roman page numbers).
+    # Set to false or remove the list from `book.chapters` if it is not needed.
+    abbreviations-in-frontmatter: true
     # Pragmatic sans-serif default (Arial-compatible)
     mainfont: "Liberation Sans"
     sansfont: "Liberation Sans"
