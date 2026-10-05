@@ -200,7 +200,7 @@ Multiple sources: [@smith2020; @miller2019]
 ### Abbreviation List 🔤
 
 The example list is in `chapters/00-abbreviations.qmd`. Add, edit, or remove
-rows in its Markdown table as needed. It appears after the table of contents,
+entries in its Markdown definition list as needed. It appears after the table of contents,
 list of figures, and list of tables. With
 `abbreviations-in-frontmatter: true` in `_quarto.yml`, it receives Roman page
 numbers and the first main chapter starts on Arabic page 1.
